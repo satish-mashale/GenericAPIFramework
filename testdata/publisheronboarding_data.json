@@ -1,0 +1,99 @@
+{
+	"workflow": {
+		"test_publisher_onboarding": {
+			"sellerDetail": {
+				"pubId": "",
+				"directness": 1,
+				"source": "On-boarding",
+				"isJsonEnable": true,
+				"sellerUrl": "www.1001fonts.com",
+				"sellerName": "1001 Fonts"
+			},
+			"publisherSite": {
+				"siteDomain": {
+					"siteDomainId": "",
+					"domainName": "https://www.1001fonts.com"
+				},
+				"siteUrl": "https://www.1001fonts.com",
+				"privacyPolicyUrl": "",
+				"iabPrimaryVerticalList": [{
+					"iabId": "IAB1"
+				}],
+				"tldCount": 0,
+				"platformId": 1,
+				"tldCheckEnabled": 0,
+				"publisherSiteSettings": {
+					"apiSetting": "",
+					"isCoppaCompliant": "",
+					"forceSecureAd": 0,
+					"dmIntegrationTypeId": 0
+				},
+				"selectedSiteGroupIds": [
+					3
+				],
+				"mobileAppProfile": {
+					"appStoreId": null,
+					"appStoreUrl": "",
+					"isLiveOnAppStore": true,
+					"richMediaCompliances": [
+
+					],
+					"overridePublisherData": true
+				}
+			},
+			"publisher": {
+				"email": "max@1001fonts.com",
+				"firstName": "Maximilian",
+				"lastName": "Bloch",
+				"companyName": "1001Fonts",
+				"url": "https://www.1001fonts.com",
+				"pubEmailAlias": "GlobalCSOM@pubmatic.com",
+				"onboardingPurpose": 1,
+				"pubType": 0,
+				"parentId": null
+			},
+			"publisherLevelSettings": {
+				"clientAuctionEnabled": 0,
+				"tagBasedIntegrationEnabled": 0,
+				"openrtbApiEnabled": 1,
+				"sdkBasedIntegrationEnabled": 0,
+				"isAggregator": 0
+			},
+			"publisherContact": {
+				"phone": ""
+			},
+			"openRTBConfig": [{
+				"id": 3
+			}],
+			"publisherPlatformProducts": {
+				"platformProducts": [{
+					"platformId": 1,
+					"platformName": "SSP",
+					"products": [{
+							"productId": 1,
+							"productName": "Yield"
+						},
+						{
+							"productId": 2,
+							"productName": "PMP"
+						},
+						{
+							"productId": 8,
+							"productName": "Apply Adnetworks"
+						}
+					]
+				}]
+			},
+			"publisherPreferences": {
+				"preferencesMap": {
+					"currency": 1,
+					"timezone": "PST"
+				}
+			},
+			"publisherSalesforceDetails": {
+				"salesforceAccountID": "0010r00000lBjFaAAK"
+			}
+		},
+		"test_publisher_onboarding_for_ortbpubs":{}
+	}
+}
