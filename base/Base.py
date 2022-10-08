@@ -10,10 +10,12 @@ import time
 import os
 import pytest
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 import uuid
 import requests
 from requests.models import Response
+import logging
+from datetime import datetime, timedelta
 
 
 class Base(object):
@@ -45,7 +47,7 @@ class Base(object):
         id = uuid.uuid4()
         return id
 
-    def send_request(self,
+    def send_request(self,testname,
                      method: RequestMethod = RequestMethod.GET,
                      payload=None,
                      chunk_size: int = 0,
@@ -54,6 +56,12 @@ class Base(object):
                      headers=None,
                      files: list = None
                      ) -> ResponseObject:
+
+
+        logging.basicConfig(filename=testname, format='%(asctime)s %(message)s', filemode='w')
+        logger = logging.getLogger()
+        logger.setLevel(logging.DEBUG)
+        logger.info(f'test case started')
 
         _payload = None
 

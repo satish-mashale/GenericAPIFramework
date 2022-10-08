@@ -9,6 +9,8 @@ assertpy = "*"
 pytest = "*"
 pytest-xdist = "*"
 pymysql = "*"
+pytest-html = "*"
+allure-pytest = "*"
 
 [dev-packages]
 

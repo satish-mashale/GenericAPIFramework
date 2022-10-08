@@ -7,13 +7,13 @@ class Publisheronboarding(Base):
         Base.__init__(self)
         self.url = BASE_URI
 
-    def create_publisher(self, endpoint, data_set):
+    def create_publisher(self,testname, endpoint, data_set):
         headers = {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
             'PubToken': ''
         }
-        res = self.send_request(
+        res = self.send_request(testname,
             Base.RequestMethod.POST,
             custom_url=f"{self.url}{endpoint}",
             payload=data_set,
