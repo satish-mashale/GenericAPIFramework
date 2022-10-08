@@ -21,6 +21,8 @@ git checkout master
 
 # Generate pytest automation report
 pytest --html <path to report folder> test_suites_path
+
+
 example:
 pytest --html reports\report.html tests\test_publisheronboarding.py
 
